@@ -1,0 +1,4 @@
+./certs
+./.vscode
+node_modules
+.env

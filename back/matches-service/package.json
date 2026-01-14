@@ -1,0 +1,31 @@
+{
+  "name": "matches-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start:dev": "tsc && node --loader ts-node/esm dist/server.js",
+    "start": "tsc && node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@fastify/jwt": "^10.0.0",
+    "axios": "^1.13.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.3",
+    "fastify": "^5.6.2",
+    "https": "^1.0.0",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.28"
+  }
+}

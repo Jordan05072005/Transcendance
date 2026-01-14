@@ -1,0 +1,283 @@
+{
+  "signup": {
+    "emptyField": "Empty field(s).",
+    "accountCreated": "Account Created"
+  },
+  "login": {
+    "emptyField": "Empty field(s).",
+    "login": "Login",
+    "exit": "Exit",
+    "valid": "Confirm"
+  },
+  "doubleAuthentificate": {
+    "cancel": "Cancel",
+    "verify": "Verify",
+    "enable": "Enable 2FA"
+  },
+  "profile": {
+    "profile": "Profile",
+    "username": "Username",
+    "changeImg": "Click to change the image.",
+    "email": "Email",
+    "language": "Language",
+    "enable": "Enable 2FA",
+    "win": "Victory",
+    "wins": "Victories",
+    "defeate": "Defeat",
+    "defeates": "Defeats",
+    "level": "Level",
+    "ratio": "Win / Defeat",
+    "matchHistory": "Match History",
+    "loading": "Loading...",
+    "noMatches": "No Matches",
+    "achivements": "Achievements",
+    "noAchivement": "No achievement",
+    "achivement1": "The Beginning",
+    "achivement1Desc": "Your first win",
+    "achivement2": "Never Give Up",
+    "achivement2Desc": "Your first defeat",
+    "achivement3": "Destroyer",
+    "achivement3Desc": "5 Wins",
+    "emptyField": "Empty field(s).",
+    "save": "Profile Saved",
+    "delete": "Profile Deleted",
+    "logout": "Logout",
+    "achievementEarned": "Achievement Unlocked!",
+    "exit": "Exit",
+    "saveButton": "Save",
+    "disconnect": "⚠ DISCONNECT",
+    "deleteButton": "⚠ DELETE ACCOUNT"
+  },
+	"lang": {
+		"english": "English",
+		"french": "French",
+		"spanish": "Spanish"
+	},
+  "friend": {
+    "send": "Send",
+    "friend": "Friends",
+    "friendSearch": "Add new Friend",
+    "requestSent": "Friend request sent.",
+    "requestAccepted": "Friend request accepted.",
+    "requestdDeclined": "Friend request declined.",
+    "username": "Username",
+    "accept": "Accept",
+    "reject": "Reject",
+    "noFriends": "No friends yet. Add some!",
+    "pendingRequests": "Pending Requests",
+    "friendDeleted": "Friend removed.",
+    "back": "Back",
+    "newRequest": "New friend request received!",
+    "requestAcceptedByOther": "Someone accepted your friend request!",
+    "leaderboard": "Leaderboard",
+    "noData": "No data yet",
+    "you": "(you)"
+  },
+  "mainPage": {
+    "achievementEarned": "Achievement Unlocked!",
+    "tournament": "TOURNAMENTS",
+    "spacebar": "SPACEBAR",
+    "start": "START",
+    "locked": "⚠ LOCKED"
+  },
+  "pong": {
+    "pressSpace": " PRESS SPACE",
+    "modeTournament": "MODE: TOURNAMENT",
+    "modeVs": "MODE: VS",
+    "modeCpu": "MODE: CPU",
+    "tournamentStarted": "Tournament Started!",
+    "won": "has won!",
+    "wonTournament": "has won the tournament!",
+    "wonAI": "You won against the AI!",
+    "victory": "Victory",
+    "wonLeft": "Left player won!",
+    "wonRight": "Right player won!",
+    "defeateAI": "The AI defeated you!",
+    "defeate": "DEFEAT!",
+    "currentMatch": "Current Match",
+    "loading": "SYSTEM LOADING"
+  },
+  "validate": {
+    "email": {
+      "required": "Email address is required",
+      "invalid": "Please enter a valid email address"
+    },
+    "password": {
+      "required": "Password is required",
+      "minLength": "Password must be at least 8 characters long"
+    },
+    "username": {
+      "required": "Username is required",
+      "minLength": "Username must be at least 3 characters long",
+      "maxLength": "Username must be less than 20 characters long",
+      "invalidChars": "Username can only contain letters, numbers, and underscores"
+    }
+  },
+  "tournamentForm": {
+    "title": "TOURNAMENT",
+    "subtitle": "ENTER 4 PLAYER NAMES",
+    "player": "Player {{number}}",
+    "start": "▶ START TOURNAMENT",
+    "waiting": "WAITING",
+    "exit": "EXIT",
+    "errors": {
+      "duplicate": "{{name}} already in use",
+      "tooLong": "Username is too big"
+    }
+  },
+  "privacypolicy": {
+    "title": "Privacy Policy",
+    "return": "Return to Game",
+    "introduction": {
+      "title": "1. Introduction",
+      "text": "Welcome to ft_transcendence Pong. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our multiplayer Pong game platform. We are committed to protecting your privacy and ensuring transparency in our data practices."
+    },
+    "collect": {
+      "title": "2. Information We Collect",
+      "account": {
+        "title": "Account Information",
+        "username": "Username and email address",
+        "password": "Encrypted password (hashed using industry-standard algorithms)",
+        "2fa": "Optional: Two-factor authentication settings"
+      },
+      "game": {
+        "title": "Game Data",
+        "history": "Match history and game statistics",
+        "tournaments": "Tournament participation records",
+        "stats": "Win/loss ratios and rankings"
+      },
+      "technical": {
+        "title": "Technical Data",
+        "tokens": "Session tokens for authentication",
+        "browser": "Browser type and version",
+        "timestamps": "Connection timestamps"
+      }
+    },
+    "usage": {
+      "title": "3. How We Use Your Information",
+      "auth": "User authentication and account management",
+      "service": "Providing and maintaining the game service",
+      "leaderboards": "Displaying leaderboards and match history",
+      "social": "Enabling friend connections and social features",
+      "tournaments": "Tournament organization and tracking",
+      "security": "Security monitoring and fraud prevention"
+    },
+    "security": {
+      "title": "4. Data Storage and Security",
+      "text": "Your data is stored securely using encrypted databases. We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. Passwords are hashed and never stored in plain text. JWT tokens are used for secure session management."
+    },
+    "sharing": {
+      "title": "5. Data Sharing",
+      "text": "We do not sell, trade, or rent your personal information to third parties. Your username and game statistics may be visible to other users through leaderboards and friend features. We may share data only when required by law or to protect our rights."
+    },
+    "rights": {
+      "title": "6. Your Rights",
+      "access": "Access and view your personal data through your profile",
+      "update": "Update or correct your account information",
+      "delete": "Request deletion of your account and associated data",
+      "2fa": "Enable or disable two-factor authentication",
+      "visibility": "Manage friend connections and visibility settings"
+    },
+    "cookies": {
+      "title": "7. Cookies and Local Storage",
+      "text": "We use essential cookies and local storage mechanisms solely for authentication purposes and maintaining your session. No tracking cookies or third-party analytics are used."
+    },
+    "contact": {
+      "title": "8. Contact",
+      "text": "For any privacy-related questions or concerns, please contact us at:",
+      "email": "guaglio.jordan@gmail.com"
+    },
+    "updated": "Last updated: December 2025"
+  },
+  "termsofservice": {
+    "title": "Terms of Service",
+    "return": "Return to Game",
+    "acceptance": {
+      "title": "1. Acceptance of Terms",
+      "text": "By accessing and using ft_transcendence Pong, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not use the service. This platform is developed as an educational project within the 42 School curriculum."
+    },
+    "description": {
+      "title": "2. Description of Service",
+      "text": "ft_transcendence provides a web-based multiplayer Pong game experience featuring:",
+      "features": {
+        "realtime": "Real-time multiplayer Pong matches",
+        "tournament": "Tournament system with bracket progression",
+        "profiles": "User profiles with game statistics",
+        "friends": "Friend system and social features",
+        "leaderboards": "Leaderboards and rankings"
+      }
+    },
+    "accounts": {
+      "title": "3. User Accounts",
+      "text": "To access certain features, you must create an account. You agree to:",
+      "provide": "Provide accurate and complete registration information",
+      "security": "Maintain the security of your password and account",
+      "responsibility": "Accept responsibility for all activities under your account",
+      "notify": "Notify us immediately of any unauthorized account use",
+      "noshare": "Not share your account credentials with others"
+    },
+    "conduct": {
+      "title": "4. User Conduct",
+      "text": "You agree not to:",
+      "cheats": "Use cheats, exploits, automation software, or any unauthorized third-party tools",
+      "disrupt": "Interfere with or disrupt the service or servers",
+      "unauthorized": "Attempt to gain unauthorized access to any part of the service",
+      "harass": "Harass, abuse, or harm other users",
+      "offensive": "Use offensive or inappropriate usernames",
+      "laws": "Engage in any activity that violates applicable laws",
+      "manipulate": "Manipulate game results or rankings through unfair means"
+    },
+    "fairplay": {
+      "title": "5. Fair Play Policy",
+      "text": "We are committed to maintaining a fair gaming environment. Any form of cheating, match-fixing, or exploitation of bugs will result in immediate account suspension or permanent ban. Tournament results may be voided if fair play violations are detected."
+    },
+    "intellectual": {
+      "title": "6. Intellectual Property",
+      "text": "This project is developed as part of the 42 School curriculum. The original Pong game concept belongs to Atari. All code, design, and visual elements specific to ft_transcendence are created for educational purposes. The retro VHS aesthetic and user interface design are original creations of the development team."
+    },
+    "availability": {
+      "title": "7. Service Availability",
+      "text": "As an educational project, we do not guarantee uninterrupted service availability. The service may be modified, suspended, or discontinued at any time for maintenance, updates, or project completion. We are not liable for any data loss or service interruptions."
+    },
+    "termination": {
+      "title": "8. Account Termination",
+      "text": "We reserve the right to suspend or terminate accounts that violate these Terms of Service. Users may also request deletion of their account at any time through the profile settings. Upon termination, access to game history and statistics will be permanently removed."
+    },
+    "liability": {
+      "title": "9. Limitation of Liability",
+      "text": "This service is provided \"as is\" without warranties of any kind. The development team and 42 School shall not be liable for any damages arising from the use or inability to use the service. This includes but is not limited to lost data, interrupted gameplay, or any technical issues."
+    },
+    "changes": {
+      "title": "10. Changes to Terms",
+      "text": "We may update these Terms of Service as the project evolves. Continued use of the service after changes constitutes acceptance of the new terms. Significant changes will be communicated through the platform."
+    },
+    "contact": {
+      "title": "11. Contact",
+      "text": "For questions about these Terms of Service, please contact us at:",
+      "email": "guaglio.jordan@gmail.com"
+    },
+    "updated": "Last updated: December 2025"
+  },
+	"response": {
+		"notFoundUser": "User not Found.",
+		"invalidRequest": "Invalide request body.",
+		"invalidCode": "Invalide code.",
+		"expiredCode": "Code has expired.",
+		"invalidToken": "Invalid token.",
+		"existUsername": "Username already exists.",
+		"existEmail": "Email already exists.",
+		"unique": "Unique constraint violation.",
+		"deleteUser": "User cannot be deleted.",
+		"fileBuff": "File buffer is missing",
+		"invalidFilename": "Invalid filename",
+		"avatarNotFound": "Avatar not found",
+		"requestSend": "Request already sent.",
+		"requestYourself": "Cannot send request to yourself.",
+		"norequest": "No request.",
+		"friendSave": "Friend already save.",
+		"requestNotFound": "Request Not Found.",
+		"friendNotFound": "Friend Not Found.",
+		"missingUsername": "Missing username",
+		"playerNotFound": "Player not Found."
+	}
+}

@@ -1,0 +1,283 @@
+{
+  "signup": {
+    "emptyField": "Champ(s) vide(s).",
+    "accountCreated": "Compte Crée"
+  },
+  "login": {
+    "emptyField": "Champ(s) vide(s).",
+    "login": "Connecté",
+    "exit": "Quitter",
+    "valid": "Valider"
+  },
+  "doubleAuthentificate": {
+    "cancel": "Annuler",
+    "verify": "Vérifier",
+    "enable": "Activer 2FA"
+  },
+  "profile": {
+    "profile": "Profil",
+    "username": "Nom d'utilisateur",
+    "changeImg": "Clique pour changer l'image.",
+    "email": "Email",
+    "language": "Langue",
+    "enable": "Activer 2FA",
+    "win": "Victoire",
+    "wins": "Victoires",
+    "defeate": "Défaite",
+    "defeates": "Défaites",
+    "level": "Niveau",
+    "ratio": "Victoire / Defaite",
+    "matchHistory": "Historique des matches",
+    "loading": "Chargement...",
+    "noMatches": "Aucun Matches",
+    "achivements": "Réalisation",
+    "noAchivement": "Aucune réalisation",
+    "achivement1": "Le début",
+    "achivement1Desc": "Ta première victoire",
+    "achivement2": "N'abandonne jamais",
+    "achivement2Desc": "Ta première defaite",
+    "achivement3": "Destructeur",
+    "achivement3Desc": "5 Victoires",
+    "emptyField": "Champ(s) vide(s).",
+    "save": "Pofile Sauvegardé",
+    "delete": "Profile Supprimé",
+    "logout": "Déconnexion",
+    "achievementEarned": "Succès débloqué !",
+    "exit": "Quitter",
+    "saveButton": "Sauvegarder",
+    "disconnect": "⚠ DÉCONNECTER",
+    "deleteButton": "⚠ SUPPRIMER LE COMPTE"
+  },
+	"lang": {
+  	"english": "Anglais",
+  	"french": "Français",
+  	"spanish": "Espagnol"
+	},
+  "friend": {
+    "send": "ENV.",
+    "friend": "Amis",
+    "friendSearch": "Ajouter un ami.",
+    "requestSent": "Demande d'ami envoyé.",
+    "requestAccepted": "Demande d'ami accepté.",
+    "requestdDeclined": "Demande d'ami refusé.",
+    "username": "Nom d'utilisateur",
+    "accept": "Accepter",
+    "reject": "Refuser",
+    "noFriends": "Pas encore d'amis. Ajoutez-en !",
+    "pendingRequests": "Demandes en attente",
+    "friendDeleted": "Ami supprimé.",
+    "back": "Retour",
+    "newRequest": "Nouvelle demande d'ami reçue !",
+    "requestAcceptedByOther": "Quelqu'un a accepté votre demande d'ami !",
+    "leaderboard": "Classement",
+    "noData": "Pas de données",
+    "you": "(vous)"
+  },
+  "mainPage": {
+    "achievementEarned": "Succès débloqué !",
+    "tournament": "TOURNOIS",
+    "spacebar": "ESPACE",
+    "start": "COMMENCER",
+    "locked": "⚠ VERROUILLÉ"
+  },
+  "pong": {
+    "pressSpace": " APPUIE SUR ESPACE",
+    "modeTournament": "MODE: TOUNROIS",
+    "modeVs": "MODE: VS",
+    "modeCpu": "MODE: CPU",
+    "tournamentStarted": "Tournois Commencé !",
+    "won": "a gagné !",
+    "wonTournament": "a gagné le tournois !",
+    "wonAI": "Vous avez gagné contre l'IA !",
+    "victory": "Victoire",
+    "wonLeft": "Le joueur de gauche a gagné !",
+    "wonRight": "Le joueur de droite a gagné !",
+    "defeateAI": "L'IA vous a détruit !",
+    "defeate": "DEFAITE !",
+    "currentMatch": "Match Actuel",
+    "loading": "CHARGEMENT SYSTEME"
+  },
+  "validate": {
+    "email": {
+      "required": "L’adresse e-mail est obligatoire",
+      "invalid": "Veuillez saisir une adresse e-mail valide"
+    },
+    "password": {
+      "required": "Le mot de passe est obligatoire",
+      "minLength": "Le mot de passe doit contenir au moins 8 caractères"
+    },
+    "username": {
+      "required": "Le nom d’utilisateur est obligatoire",
+      "minLength": "Le nom d’utilisateur doit contenir au moins 3 caractères",
+      "maxLength": "Le nom d’utilisateur doit contenir moins de 20 caractères",
+      "invalidChars": "Le nom d’utilisateur ne peut contenir que des lettres, chiffres et underscores"
+    }
+	},
+  "tournamentForm": {
+    "title": "TOURNAMENT",
+    "subtitle": "ENTREZ LES NOMS DES 4 JOUEURS",
+    "player": "Joueur {{number}}",
+    "start": "▶ LANCER LE TOURNOI",
+    "waiting": "EN ATTENTE",
+    "exit": "QUITTER",
+    "errors": {
+      "duplicate": "{{name}} est déjà utilisé",
+      "tooLong": "Le nom d'utilisateur est trop long"
+    }
+  },
+  "privacypolicy": {
+    "title": "Politique de confidentialité",
+    "return": "Retour au jeu",
+    "introduction": {
+      "title": "1. Introduction",
+      "text": "Bienvenue sur ft_transcendence Pong. Cette politique de confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous utilisez notre plateforme de jeu Pong multijoueur. Nous nous engageons à protéger votre vie privée et à garantir la transparence de nos pratiques en matière de données."
+    },
+    "collect": {
+      "title": "2. Informations que nous collectons",
+      "account": {
+        "title": "Informations du compte",
+        "username": "Nom d'utilisateur et adresse e-mail",
+        "password": "Mot de passe chiffré (haché à l’aide d’algorithmes conformes aux standards de l’industrie)",
+        "2fa": "Optionnel : paramètres d’authentification à deux facteurs"
+      },
+      "game": {
+        "title": "Données de jeu",
+        "history": "Historique des parties et statistiques de jeu",
+        "tournaments": "Historique de participation aux tournois",
+        "stats": "Ratios de victoires/défaites et classements"
+      },
+      "technical": {
+        "title": "Données techniques",
+        "tokens": "Jetons de session pour l’authentification",
+        "browser": "Type et version du navigateur",
+        "timestamps": "Horodatages de connexion"
+      }
+    },
+    "usage": {
+      "title": "3. Utilisation de vos informations",
+      "auth": "Authentification des utilisateurs et gestion des comptes",
+      "service": "Fourniture et maintenance du service de jeu",
+      "leaderboards": "Affichage des classements et de l’historique des matchs",
+      "social": "Activation des connexions entre amis et des fonctionnalités sociales",
+      "tournaments": "Organisation et suivi des tournois",
+      "security": "Surveillance de la sécurité et prévention des fraudes"
+    },
+    "security": {
+      "title": "4. Stockage et sécurité des données",
+      "text": "Vos données sont stockées de manière sécurisée à l’aide de bases de données chiffrées. Nous mettons en œuvre des mesures techniques et organisationnelles appropriées afin de protéger vos informations personnelles contre tout accès non autorisé, altération, divulgation ou destruction. Les mots de passe sont hachés et ne sont jamais stockés en clair. Les jetons JWT sont utilisés pour une gestion sécurisée des sessions."
+    },
+    "sharing": {
+      "title": "5. Partage des données",
+      "text": "Nous ne vendons, n’échangeons et ne louons jamais vos informations personnelles à des tiers. Votre nom d’utilisateur et vos statistiques de jeu peuvent être visibles par d’autres utilisateurs via les classements et les fonctionnalités sociales. Les données ne peuvent être partagées que si la loi l’exige ou pour protéger nos droits."
+    },
+    "rights": {
+      "title": "6. Vos droits",
+      "access": "Accéder à vos données personnelles et les consulter depuis votre profil",
+      "update": "Mettre à jour ou corriger les informations de votre compte",
+      "delete": "Demander la suppression de votre compte et des données associées",
+      "2fa": "Activer ou désactiver l’authentification à deux facteurs",
+      "visibility": "Gérer les connexions entre amis et les paramètres de visibilité"
+    },
+    "cookies": {
+      "title": "7. Cookies et stockage local",
+      "text": "Nous utilisons uniquement des cookies essentiels et des mécanismes de stockage local à des fins d’authentification et de maintien de session. Aucun cookie de suivi ni outil d’analyse tiers n’est utilisé."
+    },
+    "contact": {
+      "title": "8. Contact",
+      "text": "Pour toute question ou préoccupation relative à la confidentialité, veuillez nous contacter à l’adresse suivante :",
+      "email": "guaglio.jordan@gmail.com"
+    },
+    "updated": "Dernière mise à jour : décembre 2025"
+  },
+  "termsofservice": {
+    "title": "Conditions d'utilisation",
+    "return": "Retour au jeu",
+    "acceptance": {
+      "title": "1. Acceptation des conditions",
+      "text": "En accédant et en utilisant ft_transcendence Pong, vous acceptez d'être lié par ces Conditions d'utilisation. Si vous n'êtes pas d'accord avec une partie de ces conditions, vous ne pouvez pas utiliser le service. Cette plateforme est développée en tant que projet éducatif dans le cadre du cursus de l'école 42."
+    },
+    "description": {
+      "title": "2. Description du service",
+      "text": "ft_transcendence fournit une expérience de jeu Pong multijoueur en ligne comprenant :",
+      "features": {
+        "realtime": "Parties de Pong multijoueur en temps réel",
+        "tournament": "Système de tournois avec progression en tableau",
+        "profiles": "Profils utilisateurs avec statistiques de jeu",
+        "friends": "Système d’amis et fonctionnalités sociales",
+        "leaderboards": "Classements et rankings"
+      }
+    },
+    "accounts": {
+      "title": "3. Comptes utilisateurs",
+      "text": "Pour accéder à certaines fonctionnalités, vous devez créer un compte. Vous acceptez de :",
+      "provide": "Fournir des informations d'inscription exactes et complètes",
+      "security": "Maintenir la sécurité de votre mot de passe et de votre compte",
+      "responsibility": "Accepter la responsabilité de toutes les activités effectuées avec votre compte",
+      "notify": "Nous notifier immédiatement de tout usage non autorisé de votre compte",
+      "noshare": "Ne pas partager vos identifiants de compte avec d'autres"
+    },
+    "conduct": {
+      "title": "4. Comportement des utilisateurs",
+      "text": "Vous acceptez de ne pas :",
+      "cheats": "Utiliser des cheats, exploits, logiciels automatisés ou tout outil tiers non autorisé",
+      "disrupt": "Perturber ou interférer avec le service ou les serveurs",
+      "unauthorized": "Tenter d'accéder sans autorisation à une partie du service",
+      "harass": "Harceler, abuser ou nuire à d'autres utilisateurs",
+      "offensive": "Utiliser des noms d’utilisateur offensants ou inappropriés",
+      "laws": "Participer à toute activité contraire aux lois applicables",
+      "manipulate": "Manipuler les résultats ou classements par des moyens déloyaux"
+    },
+    "fairplay": {
+      "title": "5. Politique de fair-play",
+      "text": "Nous nous engageons à maintenir un environnement de jeu équitable. Toute forme de triche, de match-fixing ou d'exploitation de bugs entraînera la suspension immédiate ou l'interdiction permanente du compte. Les résultats des tournois peuvent être annulés en cas de violation du fair-play."
+    },
+    "intellectual": {
+      "title": "6. Propriété intellectuelle",
+      "text": "Ce projet est développé dans le cadre du cursus de l'école 42. Le concept original du jeu Pong appartient à Atari. Tout le code, le design et les éléments visuels spécifiques à ft_transcendence sont créés à des fins éducatives. L’esthétique rétro VHS et le design de l’interface utilisateur sont des créations originales de l’équipe de développement."
+    },
+    "availability": {
+      "title": "7. Disponibilité du service",
+      "text": "En tant que projet éducatif, nous ne garantissons pas la disponibilité continue du service. Le service peut être modifié, suspendu ou interrompu à tout moment pour maintenance, mises à jour ou achèvement du projet. Nous ne sommes pas responsables de toute perte de données ou interruption du service."
+    },
+    "termination": {
+      "title": "8. Résiliation du compte",
+      "text": "Nous nous réservons le droit de suspendre ou de résilier les comptes qui violent ces Conditions d'utilisation. Les utilisateurs peuvent également demander la suppression de leur compte à tout moment via les paramètres du profil. Après résiliation, l’accès à l’historique et aux statistiques de jeu sera supprimé définitivement."
+    },
+    "liability": {
+      "title": "9. Limitation de responsabilité",
+      "text": "Ce service est fourni « tel quel » sans garantie d’aucune sorte. L’équipe de développement et l’école 42 ne sauraient être tenues responsables de tout dommage résultant de l’utilisation ou de l’incapacité à utiliser le service. Cela inclut, mais sans s’y limiter, les pertes de données, interruptions de jeu ou tout problème technique."
+    },
+    "changes": {
+      "title": "10. Modifications des conditions",
+      "text": "Nous pouvons mettre à jour ces Conditions d'utilisation au fur et à mesure de l’évolution du projet. L’utilisation continue du service après ces modifications constitue une acceptation des nouvelles conditions. Les modifications importantes seront communiquées via la plateforme."
+    },
+    "contact": {
+      "title": "11. Contact",
+      "text": "Pour toute question concernant ces Conditions d'utilisation, veuillez nous contacter à :",
+      "email": "guaglio.jordan@gmail.com"
+    },
+    "updated": "Dernière mise à jour : décembre 2025"
+  },
+  "response": {
+    "notFoundUser": "Utilisateur introuvable.",
+    "invalidRequest": "Corps de requête invalide.",
+    "invalidCode": "Code invalide.",
+    "expiredCode": "Le code a expiré.",
+    "invalidToken": "Jeton invalide.",
+    "existUsername": "Le nom d’utilisateur existe déjà.",
+    "existEmail": "L’adresse e-mail existe déjà.",
+    "unique": "Violation de contrainte d’unicité.",
+    "deleteUser": "L’utilisateur ne peut pas être supprimé.",
+    "fileBuff": "Le buffer du fichier est manquant.",
+    "invalidFilename": "Nom de fichier invalide.",
+    "avatarNotFound": "Avatar introuvable.",
+    "requestSend": "La demande a déjà été envoyée.",
+    "requestYourself": "Impossible de s’envoyer une demande à soi-même.",
+    "norequest": "Aucune demande.",
+    "friendSave": "Ami déjà enregistré.",
+    "requestNotFound": "Demande introuvable.",
+    "friendNotFound": "Ami introuvable.",
+    "missingUsername": "Nom d’utilisateur manquant.",
+    "playerNotFound": "Joueur introuvable."
+  }
+}

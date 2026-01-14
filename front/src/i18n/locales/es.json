@@ -1,0 +1,283 @@
+{
+  "signup": {
+    "emptyField": "Campo(s) vacío(s).",
+    "accountCreated": "Cuenta creada"
+  },
+  "login": {
+    "emptyField": "Campo(s) vacío(s).",
+    "login": "Iniciar sesión",
+    "exit": "Salir",
+    "valid": "Confirmar"
+  },
+  "doubleAuthentificate": {
+    "cancel": "Cancelar",
+    "verify": "Verificar",
+    "enable": "Activar 2FA",
+    "you": "tú"
+  },
+  "profile": {
+    "profile": "Perfil",
+    "username": "Nombre de usuario",
+    "changeImg": "Haz clic para cambiar la imagen.",
+    "email": "Correo electrónico",
+    "language": "Idioma",
+    "enable": "Activar 2FA",
+    "win": "Victoria",
+    "wins": "Victorias",
+    "defeate": "Derrota",
+    "defeates": "Derrotas",
+    "level": "Nivel",
+    "ratio": "Victoria / Derrota",
+    "matchHistory": "Historial de partidas",
+    "loading": "Cargando...",
+    "noMatches": "Sin partidas",
+    "achivements": "Logros",
+    "noAchivement": "Sin logros",
+    "achivement1": "El comienzo",
+    "achivement1Desc": "Tu primera victoria",
+    "achivement2": "Nunca te rindas",
+    "achivement2Desc": "Tu primera derrota",
+    "achivement3": "Destructor",
+    "achivement3Desc": "5 victorias",
+    "emptyField": "Campo(s) vacío(s).",
+    "save": "Perfil guardado",
+    "delete": "Perfil eliminado",
+    "logout": "Cerrar sesión",
+    "achievementEarned": "¡Logro desbloqueado!",
+    "exit": "Salir",
+    "saveButton": "Guardar",
+    "disconnect": "⚠ DESCONECTAR",
+    "deleteButton": "⚠ ELIMINAR CUENTA"
+  },
+	"lang": {
+ 		"english": "Inglés",
+ 		"french": "Francés",
+  	"spanish": "Español"
+	},
+  "friend": {
+    "send": "Enviar",
+    "friend": "Amigos",
+    "friendSearch": "Añadir nuevo amigo",
+    "requestSent": "Solicitud de amistad enviada.",
+    "requestAccepted": "Solicitud de amistad aceptada.",
+    "requestdDeclined": "Solicitud de amistad rechazada.",
+    "username": "Nombre de usuario",
+    "accept": "Aceptar",
+    "reject": "Rechazar",
+    "noFriends": "Aún no tienes amigos. ¡Añade algunos!",
+    "pendingRequests": "Solicitudes pendientes",
+    "friendDeleted": "Amigo eliminado.",
+    "back": "Volver",
+    "newRequest": "¡Nueva solicitud de amistad recibida!",
+    "requestAcceptedByOther": "¡Alguien aceptó tu solicitud de amistad!",
+    "leaderboard": "Clasificación",
+    "noData": "Sin datos todavía"
+  },
+  "mainPage": {
+    "achievementEarned": "¡Logro desbloqueado!",
+    "tournament": "TORNEOS",
+    "spacebar": "BARRA ESPACIADORA",
+    "start": "INICIAR",
+    "locked": "⚠ BLOQUEADO"
+  },
+  "pong": {
+    "pressSpace": " PRESIONA ESPACIO",
+    "modeTournament": "MODO: TORNEO",
+    "modeVs": "MODO: VS",
+    "modeCpu": "MODO: CPU",
+    "tournamentStarted": "¡Torneo iniciado!",
+    "won": "ha ganado!",
+    "wonTournament": "¡ha ganado el torneo!",
+    "wonAI": "¡Has ganado contra la IA!",
+    "victory": "Victoria",
+    "wonLeft": "¡El jugador izquierdo ganó!",
+    "wonRight": "¡El jugador derecho ganó!",
+    "defeateAI": "¡La IA te derrotó!",
+    "defeate": "¡DERROTA!",
+    "currentMatch": "Partida actual",
+    "loading": "CARGANDO SISTEMA"
+  },
+  "validate": {
+    "email": {
+      "required": "El correo electrónico es obligatorio",
+      "invalid": "Por favor, introduce una dirección de correo electrónico válida"
+    },
+    "password": {
+      "required": "La contraseña es obligatoria",
+      "minLength": "La contraseña debe tener al menos 8 caracteres"
+    },
+    "username": {
+      "required": "El nombre de usuario es obligatorio",
+      "minLength": "El nombre de usuario debe tener al menos 3 caracteres",
+      "maxLength": "El nombre de usuario debe tener menos de 20 caracteres",
+      "invalidChars": "El nombre de usuario solo puede contener letras, números y guiones bajos"
+    }
+  },
+  "tournamentForm": {
+    "title": "TORNEO",
+    "subtitle": "INTRODUCE 4 NOMBRES DE JUGADORES",
+    "player": "Jugador {{number}}",
+    "start": "▶ INICIAR TORNEO",
+    "waiting": "ESPERANDO",
+    "exit": "SALIR",
+    "errors": {
+      "duplicate": "{{name}} ya está en uso",
+      "tooLong": "El nombre de usuario es demasiado largo"
+    }
+  },
+  "privacypolicy": {
+    "title": "Política de privacidad",
+    "return": "Volver al juego",
+    "introduction": {
+      "title": "1. Introducción",
+      "text": "Bienvenido a ft_transcendence Pong. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos tu información cuando utilizas nuestra plataforma multijugador de Pong. Nos comprometemos a proteger tu privacidad y garantizar la transparencia en nuestras prácticas de datos."
+    },
+    "collect": {
+      "title": "2. Información que recopilamos",
+      "account": {
+        "title": "Información de la cuenta",
+        "username": "Nombre de usuario y dirección de correo electrónico",
+        "password": "Contraseña cifrada (hasheada usando algoritmos estándar de la industria)",
+        "2fa": "Opcional: configuración de autenticación de dos factores"
+      },
+      "game": {
+        "title": "Datos del juego",
+        "history": "Historial de partidas y estadísticas del juego",
+        "tournaments": "Registros de participación en torneos",
+        "stats": "Ratios de victorias/derrotas y clasificaciones"
+      },
+      "technical": {
+        "title": "Datos técnicos",
+        "tokens": "Tokens de sesión para autenticación",
+        "browser": "Tipo y versión del navegador",
+        "timestamps": "Marcas de tiempo de conexión"
+      }
+    },
+    "usage": {
+      "title": "3. Cómo usamos tu información",
+      "auth": "Autenticación de usuarios y gestión de cuentas",
+      "service": "Proporcionar y mantener el servicio del juego",
+      "leaderboards": "Mostrar clasificaciones e historial de partidas",
+      "social": "Habilitar conexiones de amigos y funciones sociales",
+      "tournaments": "Organización y seguimiento de torneos",
+      "security": "Monitoreo de seguridad y prevención de fraudes"
+    },
+    "security": {
+      "title": "4. Almacenamiento y seguridad de datos",
+      "text": "Tus datos se almacenan de forma segura utilizando bases de datos cifradas. Implementamos medidas técnicas y organizativas adecuadas para proteger tu información personal contra accesos no autorizados, alteración, divulgación o destrucción. Las contraseñas se almacenan cifradas y nunca en texto plano. Se utilizan tokens JWT para una gestión segura de sesiones."
+    },
+    "sharing": {
+      "title": "5. Compartición de datos",
+      "text": "No vendemos, intercambiamos ni alquilamos tu información personal a terceros. Tu nombre de usuario y estadísticas del juego pueden ser visibles para otros usuarios a través de clasificaciones y funciones de amigos. Solo compartimos datos cuando lo exige la ley o para proteger nuestros derechos."
+    },
+    "rights": {
+      "title": "6. Tus derechos",
+      "access": "Acceder y ver tus datos personales a través de tu perfil",
+      "update": "Actualizar o corregir la información de tu cuenta",
+      "delete": "Solicitar la eliminación de tu cuenta y datos asociados",
+      "2fa": "Activar o desactivar la autenticación de dos factores",
+      "visibility": "Gestionar conexiones de amigos y ajustes de visibilidad"
+    },
+    "cookies": {
+      "title": "7. Cookies y almacenamiento local",
+      "text": "Utilizamos cookies esenciales y mecanismos de almacenamiento local únicamente para fines de autenticación y mantenimiento de sesión. No se utilizan cookies de seguimiento ni analíticas de terceros."
+    },
+    "contact": {
+      "title": "8. Contacto",
+      "text": "Para cualquier pregunta o inquietud relacionada con la privacidad, contáctanos en:",
+      "email": "guaglio.jordan@gmail.com"
+    },
+    "updated": "Última actualización: diciembre de 2025"
+  },
+  "termsofservice": {
+    "title": "Términos del servicio",
+    "return": "Volver al juego",
+    "acceptance": {
+      "title": "1. Aceptación de los términos",
+      "text": "Al acceder y utilizar ft_transcendence Pong, aceptas estar sujeto a estos Términos del Servicio. Si no estás de acuerdo con alguna parte de estos términos, no debes utilizar el servicio. Esta plataforma se desarrolla como un proyecto educativo dentro del plan de estudios de la Escuela 42."
+    },
+    "description": {
+      "title": "2. Descripción del servicio",
+      "text": "ft_transcendence proporciona una experiencia de juego Pong multijugador basada en la web que incluye:",
+      "features": {
+        "realtime": "Partidas de Pong multijugador en tiempo real",
+        "tournament": "Sistema de torneos con progresión por eliminatorias",
+        "profiles": "Perfiles de usuario con estadísticas de juego",
+        "friends": "Sistema de amigos y funciones sociales",
+        "leaderboards": "Clasificaciones y rankings"
+      }
+    },
+    "accounts": {
+      "title": "3. Cuentas de usuario",
+      "text": "Para acceder a ciertas funciones, debes crear una cuenta. Aceptas:",
+      "provide": "Proporcionar información de registro precisa y completa",
+      "security": "Mantener la seguridad de tu contraseña y cuenta",
+      "responsibility": "Aceptar la responsabilidad de todas las actividades bajo tu cuenta",
+      "notify": "Notificarnos inmediatamente sobre cualquier uso no autorizado de la cuenta",
+      "noshare": "No compartir las credenciales de tu cuenta con otros"
+    },
+    "conduct": {
+      "title": "4. Conducta del usuario",
+      "text": "Aceptas no:",
+      "cheats": "Usar trampas, exploits, software de automatización o herramientas de terceros no autorizadas",
+      "disrupt": "Interferir o interrumpir el servicio o los servidores",
+      "unauthorized": "Intentar obtener acceso no autorizado a cualquier parte del servicio",
+      "harass": "Acosar, abusar o dañar a otros usuarios",
+      "offensive": "Usar nombres de usuario ofensivos o inapropiados",
+      "laws": "Participar en actividades que violen las leyes aplicables",
+      "manipulate": "Manipular resultados o clasificaciones del juego de manera injusta"
+    },
+    "fairplay": {
+      "title": "5. Política de juego limpio",
+      "text": "Estamos comprometidos a mantener un entorno de juego justo. Cualquier forma de trampa, manipulación de partidas o explotación de errores resultará en la suspensión inmediata de la cuenta o en un bloqueo permanente. Los resultados de los torneos pueden ser anulados si se detectan violaciones al juego limpio."
+    },
+    "intellectual": {
+      "title": "6. Propiedad intelectual",
+      "text": "Este proyecto se desarrolla como parte del plan de estudios de la Escuela 42. El concepto original del juego Pong pertenece a Atari. Todo el código, diseño y elementos visuales específicos de ft_transcendence se crean con fines educativos. La estética retro VHS y el diseño de la interfaz de usuario son creaciones originales del equipo de desarrollo."
+    },
+    "availability": {
+      "title": "7. Disponibilidad del servicio",
+      "text": "Como proyecto educativo, no garantizamos la disponibilidad ininterrumpida del servicio. El servicio puede ser modificado, suspendido o discontinuado en cualquier momento por mantenimiento, actualizaciones o finalización del proyecto. No somos responsables por pérdidas de datos o interrupciones del servicio."
+    },
+    "termination": {
+      "title": "8. Terminación de cuenta",
+      "text": "Nos reservamos el derecho de suspender o cancelar cuentas que violen estos Términos del Servicio. Los usuarios también pueden solicitar la eliminación de su cuenta en cualquier momento a través de la configuración del perfil. Tras la terminación, el acceso al historial de partidas y estadísticas se eliminará permanentemente."
+    },
+    "liability": {
+      "title": "9. Limitación de responsabilidad",
+      "text": "Este servicio se proporciona \"tal cual\" sin garantías de ningún tipo. El equipo de desarrollo y la Escuela 42 no serán responsables por daños derivados del uso o la imposibilidad de uso del servicio. Esto incluye, entre otros, pérdida de datos, interrupciones del juego o problemas técnicos."
+    },
+    "changes": {
+      "title": "10. Cambios en los términos",
+      "text": "Podemos actualizar estos Términos del Servicio a medida que el proyecto evoluciona. El uso continuado del servicio después de los cambios constituye la aceptación de los nuevos términos. Los cambios significativos se comunicarán a través de la plataforma."
+    },
+    "contact": {
+      "title": "11. Contacto",
+      "text": "Para preguntas sobre estos Términos del Servicio, contáctanos en:",
+      "email": "guaglio.jordan@gmail.com"
+    },
+    "updated": "Última actualización: diciembre de 2025"
+  },
+  "response": {
+    "notFoundUser": "Usuario no encontrado.",
+    "invalidRequest": "Cuerpo de la solicitud inválido.",
+    "invalidCode": "Código inválido.",
+    "expiredCode": "El código ha expirado.",
+    "invalidToken": "Token inválido.",
+    "existUsername": "El nombre de usuario ya existe.",
+    "existEmail": "El correo electrónico ya existe.",
+    "unique": "Violación de restricción de unicidad.",
+    "deleteUser": "El usuario no puede ser eliminado.",
+    "fileBuff": "Falta el buffer del archivo.",
+    "invalidFilename": "Nombre de archivo inválido.",
+    "avatarNotFound": "Avatar no encontrado.",
+    "requestSend": "La solicitud ya ha sido enviada.",
+    "requestYourself": "No se puede enviar una solicitud a uno mismo.",
+    "norequest": "No hay solicitudes.",
+    "friendSave": "El amigo ya está guardado.",
+    "requestNotFound": "Solicitud no encontrada.",
+    "friendNotFound": "Amigo no encontrado.",
+    "missingUsername": "Falta el nombre de usuario.",
+    "playerNotFound": "Jugador no encontrado."
+  }
+}

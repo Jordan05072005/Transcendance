@@ -1,0 +1,200 @@
+# version: "3.8"
+
+services:
+  redis:
+    image: redis:7
+    ports:
+      - "6378:6379"
+    networks:
+      - transcendance
+  auth-service:
+    build:
+      context: .
+      dockerfile: back/auth-service/Dockerfile
+    container_name: auth-service
+    ports:
+      - "3000:3001"
+    env_file:
+      - ./.env
+    environment:
+      NODE_ENV: development
+      DB_TYPE: sqlite
+      REDIS_URL: "redis://redis:6379"
+      DB_DATABASE: /usr/src/app/db/sqlite.db
+    volumes:
+      - ./back/auth-service:/usr/src/app:delegated
+      - auth_node_modules:/usr/src/app/node_modules
+      - auth-db:/usr/src/app/db
+      - ./back/logs/auth:/usr/src/logs
+      - ./certs:/usr/src/app/certs:ro
+    healthcheck:
+      test: ["CMD", "curl", "-k", "-f", "https://localhost:3001/ready"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+    networks:
+      - transcendance
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+  users-service:
+    build:
+      context: .
+      dockerfile: back/users-service/Dockerfile
+    container_name: user-service
+    ports:
+      - "3001:3001"
+    env_file:
+      - ./.env
+    environment:
+      NODE_ENV: development
+      DB_TYPE: sqlite
+      DB_DATABASE: /usr/src/app/db/sqlite.db
+    volumes:
+      - ./back/users-service:/usr/src/app:delegated
+      - user_node_modules:/usr/src/app/node_modules
+      - user-db:/usr/src/app/db
+      - ./certs:/usr/src/app/certs:ro
+      - ./back/logs/users:/usr/src/logs
+      - avatar-uploads:/usr/src/app/uploads/avatars
+    networks:
+      - transcendance
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+  friends-service:
+    build:
+      context: .
+      dockerfile: back/friends-service/Dockerfile
+    container_name: friends-service
+    ports:
+      - "3002:3001"
+    env_file:
+      - ./.env
+    environment:
+      NODE_ENV: development
+      DB_TYPE: sqlite
+      DB_DATABASE: /usr/src/app/db/sqlite.db
+    volumes:
+      - ./back/friends-service:/usr/src/app:delegated
+      - friend_node_modules:/usr/src/app/node_modules
+      - friend-db:/usr/src/app/db
+      - ./certs:/usr/src/app/certs:ro
+      - ./back/logs/friends:/usr/src/logs
+    networks:
+      - transcendance
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+  matches-service:
+    build:
+      context: .
+      dockerfile: back/matches-service/Dockerfile
+    container_name: matches-service
+    ports:
+      - "3003:3001"
+    env_file:
+      - ./.env
+    environment:
+      NODE_ENV: development
+      DB_TYPE: sqlite
+      DB_DATABASE: /usr/src/app/db/sqlite.db
+    volumes:
+      - ./back/matches-service:/usr/src/app:delegated
+      - matches_node_modules:/usr/src/app/node_modules
+      - matches-db:/usr/src/app/db
+      - ./certs:/usr/src/app/certs:ro
+      - ./back/logs/matches:/usr/src/logs
+
+    networks:
+      - transcendance
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+  front:
+    build:
+      context: .
+      dockerfile: front/Dockerfile
+    container_name: front
+    ports:
+      - "5173:5173"
+    env_file:
+      - ./.env
+    volumes:
+      - ./front:/usr/src/app:delegated
+      - front_node_modules:/usr/src/app/node_modules
+    depends_on:
+      auth-service:
+        condition: service_healthy
+    networks:
+      - transcendance
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+    networks:
+      - transcendance
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+      - ./back/logs:/logs
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.15.0
+    container_name: logstash
+    environment:
+        ELASTIC_USERNAME: elastic
+        ELASTIC_PASSWORD: ${ELASTIC_PASSWORD}
+    volumes:
+      - ./back/logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro
+      - ./back/logs:/logs
+      - ./back/logstash/wait.sh:/wait.sh
+    entrypoint: ["/bin/bash", "/wait.sh"] 
+    networks:
+      - transcendance
+    depends_on:
+      - elasticsearch
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.15.0
+    container_name: kibana
+    environment:
+      ELASTICSEARCH_HOSTS: "http://elasticsearch:9200"
+      ELASTICSEARCH_USERNAME: ${ELASTIC_USERNAME_KIBANA}
+      ELASTICSEARCH_PASSWORD: ${ELASTIC_PASSWORD}
+      XPACK_ENCRYPTED_SAVED_OBJECTS_ENCRYPTIONKEY: ${XPACK_ENCRYPTED_SAVED_OBJECTS_ENCRYPTIONKEY}
+      XPACK_SECURITY_ENCRYPTIONKEY: ${XPACK_SECURITY_ENCRYPTIONKEY}
+      XPACK_REPORTING_ENCRYPTIONKEY: ${XPACK_REPORTING_ENCRYPTIONKEY}
+    volumes:
+      - ./back/kibana/kibana.yml:/usr/share/kibana/config/kibana.yml:ro
+      - ./back/elasticSearch/init-elastic.sh:/init-elastic.sh:ro
+    entrypoint: ["/bin/bash", "/init-elastic.sh"] 
+    networks:
+      - transcendance
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+
+networks:
+  transcendance:
+
+volumes:
+  front_node_modules:
+  auth_node_modules:
+  user_node_modules:
+  friend_node_modules:
+  matches_node_modules:
+  auth-db:
+  user-db:
+  friend-db:
+  matches-db:
+  es_data:
+  avatar-uploads:
